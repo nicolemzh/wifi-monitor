@@ -1,12 +1,14 @@
+import React from 'react';
 import './App.css';
+import Heatmap from './pages/heatmap';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h3>Welcome to the WiFi Heatmap Display Project!</h3>
-        <p>Please follow the README to get started.</p>
-      </header>
+    <div className = 'App'>
+        <Routes>
+            <Route path='/' element={<Heatmap/>}/>
+        </Routes>
     </div>
   );
 }
